@@ -1,0 +1,155 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #ff6b6b; /* Using your primary color */
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+  
+  .navbar-logo:hover {
+      transform: scale(1.05);
+    }
+    
+    .navbar-links {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    
+  
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: color 0.2s ease;
+  }
+  .logout-btn{
+    background-color: black;
+    padding: 10px;
+    border-radius: 4px;
+    
+    /* color: black; */
+    font-weight: bold;
+  }
+  
+  .navbar-link:hover {
+    color: #f7fff7; /* Your light color */
+  }
+  
+  .navbar-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f7fff7;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-link:hover::after {
+    width: 100%;
+  }
+  
+  .search-bar {
+    flex: 1;
+    min-width: 200px;
+    max-width: 500px;
+    margin: 0 1rem;
+  }
+  
+  /* Mobile Menu Toggle (hidden by default) */
+  .mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 992px) {
+    .navbar-container {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+    }
+    
+    .navbar-links {
+      order: 3;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 1rem 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      display: none; /* Hidden by default on mobile */
+    }
+    
+    .navbar-links.active {
+      display: flex; /* Show when mobile menu is active */
+    }
+    
+    .search-bar {
+      order: 2;
+      width: 100%;
+      max-width: 100%;
+      margin: 0.2rem 0;
+
+     
+    }
+    
+    .mobile-menu-toggle {
+      display: block;
+      order: 1;
+      align-self: flex-end;
+    }
+    
+    .navbar-logo {
+      order: 1;
+    }
+  }
+  
+  @media (min-width: 993px) {
+    .navbar-links {
+      display: flex !important; /* Ensure links are always visible on desktop */
+    }
+  }
+  
+  /* Search Bar Specific Styles */
+  .search-bar input {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .search-bar input:focus {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  }
