@@ -4,7 +4,7 @@ import { Navigate } from 'react-router-dom';
 
 const Dashboard = () => {
     const { isLoged } = useContext(ProductData);
-    return isLoged ? <Navigate to="/home" /> : <Navigate to="/login" />;
+    return isLoged ? <Navigate to="/home" /> : <Navigate to="/signup" />;
 };
 
 export default Dashboard;

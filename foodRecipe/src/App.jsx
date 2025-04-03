@@ -38,7 +38,7 @@ function App() {
 // Add this component
 function ProtectedRoute({ children }) {
   const { isLoged } = useContext(ProductData);
-  return isLoged ? children : <Navigate to="/login" />;
+  return isLoged ? children : <Navigate to="/signup" />;
 }
 
 export default App;
