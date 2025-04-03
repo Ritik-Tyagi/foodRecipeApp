@@ -7,6 +7,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import Dashboard from './pages/Dashbord';
 import { ProductData } from './ContextApi';
+import SavedRecipes from './components/SavedRecipes';
 
 
 function App() {
@@ -25,7 +26,10 @@ function App() {
         <Route path="/recipe/:id" element={<Recipe />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/cart" element={<SavedRecipes />} />
+
         <Route path="*" element={<Navigate to="/" />} />
+
       </Routes>
     </div>
   );

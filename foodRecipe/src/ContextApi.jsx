@@ -5,6 +5,7 @@ export const ProductData = createContext();
 const DataProvider = ({ children }) => {
     const [formData, setFormData] = useState([]);
     const [user, setUser] = useState({});
+    const [savedRecipes, setSavedRecipes]=useState([])
     const [isLoged, setisLoged] = useState(() => !!localStorage.getItem("userToken"));
     
     const login = (userData) => {
@@ -22,7 +23,7 @@ const DataProvider = ({ children }) => {
     };
     
     return (
-        <ProductData.Provider value={{ isLoged, login, logout, user, setUser, formData, setFormData }}>
+        <ProductData.Provider value={{ isLoged, login, logout, user, setUser, formData, setFormData ,savedRecipes, setSavedRecipes}}>
             {children}
         </ProductData.Provider>
     );

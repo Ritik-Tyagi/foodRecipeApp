@@ -248,33 +248,7 @@ export const recipes = [
       difficulty: "Medium",
       cuisine: "Italian"
     },
-    {
-      id: 10,
-      title: "Beef Bulgogi",
-      image: "https://www.themealdb.com/images/media/meals/1800_867433.jpg",
-      ingredients: [
-        "500g ribeye steak",
-        "1/2 pear",
-        "4 tbsp soy sauce",
-        "2 tbsp brown sugar",
-        "1 tbsp sesame oil",
-        "3 cloves garlic",
-        "1 tbsp ginger",
-        "Spring onions"
-      ],
-      instructions: [
-        "Slice beef thinly",
-        "Blend pear with other marinade ingredients",
-        "Marinate beef for at least 1 hour",
-        "Grill or pan-fry beef",
-        "Garnish with spring onions"
-      ],
-      prepTime: "20 mins",
-      cookTime: "10 mins",
-      servings: 4,
-      difficulty: "Medium",
-      cuisine: "Korean"
-    },
+    
     {
       id: 11,
       title: "Margherita Pizza",
@@ -356,35 +330,7 @@ export const recipes = [
       difficulty: "Hard",
       cuisine: "British"
     },
-    {
-      id: 14,
-      title: "Pad Thai",
-      image: "https://www.themealdb.com/images/media/meals/4d7x371562318798.jpg",
-      ingredients: [
-        "200g rice noodles",
-        "200g shrimp",
-        "2 eggs",
-        "100g tofu",
-        "3 tbsp tamarind paste",
-        "2 tbsp fish sauce",
-        "1 tbsp sugar",
-        "Bean sprouts",
-        "Peanuts"
-      ],
-      instructions: [
-        "Soak noodles",
-        "Stir-fry shrimp and tofu",
-        "Push aside, scramble eggs",
-        "Add noodles and sauce",
-        "Toss everything together",
-        "Garnish with sprouts and peanuts"
-      ],
-      prepTime: "20 mins",
-      cookTime: "10 mins",
-      servings: 2,
-      difficulty: "Medium",
-      cuisine: "Thai"
-    },
+    
     {
       id: 15,
       title: "Ratatouille",
@@ -467,31 +413,7 @@ export const recipes = [
       difficulty: "Easy",
       cuisine: "American"
     },
-    {
-      id: 18,
-      title: "Miso Soup",
-      image: "https://www.themealdb.com/images/media/meals/1549542914.jpg",
-      ingredients: [
-        "4 cups dashi stock",
-        "3 tbsp miso paste",
-        "100g tofu",
-        "2 green onions",
-        "Wakame seaweed"
-      ],
-      instructions: [
-        "Heat stock to simmer",
-        "Dissolve miso in small amount of stock",
-        "Add miso to pot",
-        "Add cubed tofu",
-        "Add wakame",
-        "Garnish with green onions"
-      ],
-      prepTime: "5 mins",
-      cookTime: "10 mins",
-      servings: 4,
-      difficulty: "Easy",
-      cuisine: "Japanese"
-    },
+    
     {
       id: 19,
       title: "Beef Stroganoff",

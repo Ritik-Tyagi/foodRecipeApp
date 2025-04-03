@@ -23,7 +23,9 @@ const Home = ({ searchTerm = '' }) => {
       ) : (
         <div className="recipes-container">
           {filteredRecipes.map(recipe => (
+            
             <RecipeCard key={`recipe-${recipe.id}`} recipe={recipe} />
+            
           ))}
         </div>
       )}

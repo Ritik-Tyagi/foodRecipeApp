@@ -11,7 +11,7 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
 
     const handleLogout = () => {
         logout();
-        navigate('/login');
+        navigate('/signup');
         setIsMenuOpen(false);
     };
 
@@ -37,6 +37,7 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
                             <span className="welcome-message">
                                 Welcome, {user?.name || 'User'}
                             </span>
+                            <Link to="/cart"  className="navbar-logo">Saved Recipes</Link>
                             <button 
                                 className="navbar-link logout-btn" 
                                 onClick={handleLogout}

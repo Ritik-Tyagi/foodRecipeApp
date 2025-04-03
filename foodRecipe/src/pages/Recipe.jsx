@@ -13,7 +13,7 @@ const Recipe = () => {
     <div className="recipe-page">
       <div className="recipe-header">
         <h1>{recipe.title}</h1>
-        <img src={recipe.image} alt={recipe.title} className="recipe-image" />
+        <img  src={recipe.image} alt={recipe.title} className="recipe-image" />
       </div>
       
       <div className="recipe-meta">
