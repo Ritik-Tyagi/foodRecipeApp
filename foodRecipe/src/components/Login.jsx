@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { ProductData } from '../ContextApi';
 import { useNavigate } from 'react-router-dom';
+import './Signup.css'
 
 const Login = () => {
     const { user, setUser, formData, login } = useContext(ProductData);
